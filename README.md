@@ -1,71 +1,141 @@
 # Simplified DRAW Model for Image Generation (Fashion-MNIST)
-This project implements a simplified version of the **DRAW (Deep Recurrent Attentive Writer)** model for image generation using the Fashion-MNIST dataset.
 
-The goal is to study how recurrent generative models can iteratively refine image reconstructions and learn meaningful latent representations under limited computational resources.
+This project implements a **simplified version of the DRAW (Deep Recurrent Attentive Writer)** model for generative image modeling using the **Fashion-MNIST dataset**.
+
+The objective is to study how **recurrent variational autoencoders** can iteratively reconstruct and generate images while learning meaningful latent representations under limited computational resources.
+
+---
+
+## Project Overview
+
+- Course: Deep Learning (M1 Artificial Intelligence – Université Paris-Saclay)  
+- Student: Md Naim Hassan Saykat  
+- Type: Mini Project (Research-style implementation)  
+
+---
 
 ## Objectives
 
-- Implement a simplified DRAW-style recurrent generative model
-- Train the model on a lightweight dataset (Fashion-MNIST)
-- Analyze the impact of:
-  - Latent dimension
-  - KL regularization (β)
-- Evaluate reconstruction and generation quality
+- Implement a **DRAW-inspired recurrent generative model**
+- Train on a **lightweight dataset (Fashion-MNIST)** instead of the original paper dataset
+- Analyze:
+  - Latent representation capacity
+  - KL divergence regularization (β-VAE)
+- Evaluate:
+  - Reconstruction quality
+  - Generative capability
 
-## Model Overview
+---
 
-The architecture is inspired by the DRAW paper and includes:
+## Model Architecture
 
-- Encoder LSTM
+This implementation follows the core principles of the DRAW model:
+
+- Encoder LSTM (feature extraction)
 - Latent variable sampling (reparameterization trick)
-- Decoder LSTM
+- Decoder LSTM (image reconstruction)
 - Iterative canvas refinement
 
-Unlike the original DRAW model, this implementation does not include the attention-based read/write mechanism for simplicity.
+**Simplification**:  
+The original DRAW attention-based read/write mechanism is **not implemented** to reduce computational complexity.
+
+---
+
+## Dataset
+
+- **Fashion-MNIST**
+- 28×28 grayscale images
+- 10 clothing categories
+- Chosen due to:
+  - Small size (fast training)
+  - Suitable for generative modeling
+
+---
 
 ## Experiments
 
-We conducted the following experiments:
-
 ### 1. Latent Dimension Study
-- Compared latent dimensions: 8, 16, 32
-- Evaluated reconstruction quality and latent representation capacity
+- Tested: `8`, `16`, `32`
+- Goal: Understand representation capacity
 
 ### 2. KL Regularization (β-VAE)
-- Tested β values: 0.5, 1.0, 2.0
-- Observed trade-off between:
+- Tested: `β = 0.5, 1.0, 2.0`
+- Observed trade-off:
+  - Low β → better reconstruction
+  - High β → better latent structure
+
+---
+
+## Training Dynamics
+
+The following plots show the evolution of:
+- Total loss
+- Reconstruction loss
+- KL divergence
+
+![Loss Components](images/loss_components.png)
+
+---
+
+## Results
+
+### Input Samples (Fashion-MNIST)
+![Dataset](images/fashion_mnist_samples.png)
+
+---
+
+### Reconstructions (Model Output)
+The model successfully reconstructs input images.
+
+![Reconstructions](images/reconstructions.png)
+
+---
+
+### Generated Samples (Random Sampling)
+The model generates realistic samples from the latent space.
+
+![Generated Samples](images/generated_samples.png)
+
+---
+
+### Best Model Outputs
+
+#### Reconstructions (Best β)
+![Best Recon](images/best_model_reconstructions.png)
+
+#### Generated Samples (Best β)
+![Best Generated](images/best_model_generated_samples.png)
+
+---
+
+## Key Findings
+
+- ✔ The model successfully learns meaningful latent representations  
+- ✔ Reconstruction quality improves with larger latent dimensions  
+- ✔ KL regularization introduces a trade-off between:
   - Reconstruction accuracy
-  - Latent space regularization
+  - Latent space structure  
+- ✔ The model can generate coherent Fashion-MNIST images  
 
- ## Results
-
-- The model successfully reconstructs Fashion-MNIST images
-- Generates coherent samples from random latent vectors
-- Larger latent dimensions improve reconstruction quality
-- Higher β values enforce stronger regularization but reduce reconstruction accuracy
-
-## Sample Outputs
-
-### Reconstructions
-![reconstructions](images/recon.png)
-
-### Generated Samples
-![generated](images/generated.png)
+---
 
 ## Limitations
 
-- Simplified DRAW model (no attention mechanism)
-- Limited to small grayscale dataset
-- Performance can be improved with deeper architectures and longer training
+- No attention mechanism (unlike original DRAW)
+- Limited to grayscale images
+- Small dataset (no high-resolution generalization)
+- Slight blur in generated outputs (expected for VAE-based models)
 
-## Conclusion
+---
 
-This project demonstrates that a simplified DRAW-style recurrent generative model can effectively learn meaningful representations and generate realistic images on a small dataset.
+## Future Improvements
 
-Future work could include:
-- Attention-based read/write mechanism
-- Application to more complex datasets
-- Improved latent space regularization techniques
+- Add **attention-based read/write mechanism**
+- Train on more complex datasets (e.g., CIFAR-10)
+- Use deeper architectures
+- Explore diffusion-based generative models
+
+---
 
 ## Tech Stack
 
@@ -74,36 +144,57 @@ Future work could include:
 - NumPy
 - Matplotlib
 
+---
+
 ## Project Structure
+
 draw-fashion-mnist-generative-model/
 │
 ├── notebook.ipynb
 ├── README.md
 ├── images/
-│   ├── recon.png
-│   ├── generated.png
+│   ├── fashion_mnist_samples.png
+│   ├── reconstructions.png
+│   ├── generated_samples.png
+│   ├── best_model_reconstructions.png
+│   ├── best_model_generated_samples.png
+│   ├── loss_components.png
 └── requirements.txt
+
+---
 
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/draw-fashion-mnist-generative-model.git
+git clone https://github.com/md-naim-hassan-saykat/draw-fashion-mnist-generative-model.git
 cd draw-fashion-mnist-generative-model
 pip install -r requirements.txt
 ```
 
----
+## Run the Project
 
-## Run
-Open the notebook:
-```markdown
+```bash
 jupyter notebook notebook.ipynb
 ```
----
 
-# Add Images
+## Notes
 
-```python
-plt.savefig("images/recon.png")
-plt.savefig("images/generated.png")
-```
+	- All figures are automatically saved in the images/ folder
+	- The notebook is fully reproducible
+	- Designed for both academic submission and portfolio showcase
+
+## Conclusion
+
+This project demonstrates that a simplified DRAW-style recurrent generative model can effectively:
+	- Learn structured latent representations
+	- Reconstruct input images
+	- Generate new realistic samples
+
+—even under constrained computational resources.
+
+## Acknowledgment
+
+Inspired by:
+
+DRAW: A Recurrent Neural Network For Image Generation
+Gregor et al., 2015
