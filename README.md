@@ -66,14 +66,13 @@ The original DRAW attention-based read/write mechanism is **not implemented** to
 
 ---
 
-## Training Dynamics
+### Training Dynamics
 
-The following plots show the evolution of:
-- Total loss
-- Reconstruction loss
-- KL divergence
+The following plot shows the evolution of total loss, reconstruction loss, and KL divergence during training.
 
 ![Loss Components](images/loss_components.png)
+
+The total loss decreases consistently over epochs, indicating stable training. The reconstruction loss steadily declines, showing improved image quality, while the KL divergence increases and stabilizes, reflecting effective latent space regularization.
 
 ---
 
@@ -85,14 +84,14 @@ The following plots show the evolution of:
 ---
 
 ### Reconstructions (Model Output)
-The model successfully reconstructs input images.
+The model successfully reconstructs input images, preserving overall structure while slightly smoothing fine details.
 
 ![Reconstructions](images/reconstructions.png)
 
 ---
 
 ### Generated Samples (Random Sampling)
-The model generates realistic samples from the latent space.
+Samples generated from the latent space show meaningful shapes corresponding to clothing categories, demonstrating that the model has learned a structured latent representation.
 
 ![Generated Samples](images/generated_samples.png)
 
@@ -101,10 +100,16 @@ The model generates realistic samples from the latent space.
 ### Best Model Outputs
 
 #### Reconstructions (Best β)
+Improved reconstruction quality is observed for the optimal β value.
+
 ![Best Recon](images/best_model_reconstructions.png)
 
 #### Generated Samples (Best β)
+Generated samples appear sharper and more coherent compared to earlier configurations.
+
 ![Best Generated](images/best_model_generated_samples.png)
+
+> **Note:** All figures are generated programmatically from the notebook, ensuring full reproducibility of the results.
 
 ---
 
