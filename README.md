@@ -198,3 +198,14 @@ Inspired by:
 
 DRAW: A Recurrent Neural Network For Image Generation
 Gregor et al., 2015
+
+## Author
+
+ **Md Naim Hassan Saykat**  
+*MSc in Artificial Intelligence, Université Paris-Saclay*  
+
+[LinkedIn](https://www.linkedin.com/in/md-naim-hassan-saykat/)  
+[GitHub](https://github.com/md-naim-hassan-saykat)  
+[Academic Email](mailto:md-naim-hassan.saykat@universite-paris-saclay.fr)  
+[Personal Email](mailto:mdnaimhassansaykat@gmail.com)
+[Portfolio](https://md-naim-hassan-saykat.github.io)
