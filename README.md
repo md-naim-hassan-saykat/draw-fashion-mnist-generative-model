@@ -209,3 +209,8 @@ Gregor et al., 2015
 [Academic Email](mailto:md-naim-hassan.saykat@universite-paris-saclay.fr) |
 [Personal Email](mailto:mdnaimhassansaykat@gmail.com) |
 [Portfolio](https://md-naim-hassan-saykat.github.io)
+
+## License
+
+This project is licensed under the MIT License.
+
