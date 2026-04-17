@@ -2,15 +2,7 @@
 
 This project implements a **simplified version of the DRAW (Deep Recurrent Attentive Writer)** model for generative image modeling using the **Fashion-MNIST dataset**.
 
-The objective is to study how **recurrent variational autoencoders** can iteratively reconstruct and generate images while learning meaningful latent representations under limited computational resources.
-
----
-
-## Project Overview
-
-- Course: Deep Learning (Artificial Intelligence - Université Paris-Saclay)  
-- Student: Md Naim Hassan Saykat  
-- Type: Mini Project (Research-style implementation)  
+The objective is to study how **recurrent variational autoencoders** can iteratively reconstruct and generate images while learning meaningful latent representations under limited computational resources. 
 
 ---
 
