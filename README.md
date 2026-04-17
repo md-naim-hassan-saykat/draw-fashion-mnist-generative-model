@@ -190,7 +190,7 @@ This project demonstrates that a simplified DRAW-style recurrent generative mode
 	- Reconstruct input images
 	- Generate new realistic samples
 
-—even under constrained computational resources.
+- even under constrained computational resources.
 
 ## Acknowledgment
 
