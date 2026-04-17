@@ -8,7 +8,7 @@ The objective is to study how **recurrent variational autoencoders** can iterati
 
 ## Project Overview
 
-- Course: Deep Learning (M1 Artificial Intelligence – Université Paris-Saclay)  
+- Course: Deep Learning (Artificial Intelligence - Université Paris-Saclay)  
 - Student: Md Naim Hassan Saykat  
 - Type: Mini Project (Research-style implementation)  
 
