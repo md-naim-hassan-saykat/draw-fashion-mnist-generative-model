@@ -97,11 +97,7 @@ pip install -r requirements.txt
 ## Run
 
 ```markdown
-## Run
-```
 Open the notebook:
-
-```bash
 jupyter notebook notebook.ipynb
 ```
 ---
