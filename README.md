@@ -110,12 +110,12 @@ The model generates realistic samples from the latent space.
 
 ## Key Findings
 
-- ✔ The model successfully learns meaningful latent representations  
-- ✔ Reconstruction quality improves with larger latent dimensions  
-- ✔ KL regularization introduces a trade-off between:
+- The model successfully learns meaningful latent representations  
+- Reconstruction quality improves with larger latent dimensions  
+- KL regularization introduces a trade-off between:
   - Reconstruction accuracy
   - Latent space structure  
-- ✔ The model can generate coherent Fashion-MNIST images  
+- The model can generate coherent Fashion-MNIST images  
 
 ---
 
