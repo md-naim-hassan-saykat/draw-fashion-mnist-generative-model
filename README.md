@@ -152,6 +152,10 @@ draw-fashion-mnist-generative-model/
 │
 ├── notebook.ipynb
 ├── README.md
+├── LICENSE
+├── .gitignore
+├── requirements.txt
+│
 ├── images/
 │   ├── fashion_mnist_samples.png
 │   ├── reconstructions.png
@@ -159,7 +163,6 @@ draw-fashion-mnist-generative-model/
 │   ├── best_model_reconstructions.png
 │   ├── best_model_generated_samples.png
 │   ├── loss_components.png
-└── requirements.txt
 
 ---
 
