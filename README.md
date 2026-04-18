@@ -183,7 +183,7 @@ pip install -r requirements.txt
 ## Run the Project
 
 ```bash
-jupyter notebook notebook.ipynb
+jupyter notebook
 ```
 
 ## Notes
