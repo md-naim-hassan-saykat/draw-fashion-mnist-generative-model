@@ -1,5 +1,14 @@
 # Simplified DRAW Model for Image Generation (Fashion-MNIST)
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+https://colab.research.google.com/github/md-naim-hassan-saykat/draw-fashion-mnist-generative-model/blob/main/notebook.ipynb)
+
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0-red)](https://pytorch.org/)
+[![Fashion-MNIST](https://img.shields.io/badge/Dataset-Fashion--MNIST-orange)](https://github.com/zalandoresearch/fashion-mnist)
+[![VAE](https://img.shields.io/badge/Architecture-Recurrent_VAE-purple)](https://github.com/md-naim-hassan-saykat/draw-fashion-mnist-generative-model)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 This project implements a **simplified version of the DRAW (Deep Recurrent Attentive Writer)** model for generative image modeling using the **Fashion-MNIST dataset**.
 
 The objective is to study how **recurrent variational autoencoders** can iteratively reconstruct and generate images while learning meaningful latent representations under limited computational resources. 
