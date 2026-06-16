@@ -195,6 +195,7 @@ jupyter notebook
 ## Conclusion
 
 This project demonstrates that a simplified DRAW-style recurrent generative model can effectively:
+
 	- Learn structured latent representations
 	- Reconstruct input images
 	- Generate new realistic samples even under constrained computational resources.
