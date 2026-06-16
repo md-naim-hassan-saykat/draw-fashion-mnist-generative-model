@@ -187,18 +187,16 @@ jupyter notebook
 ```
 
 ## Notes
-
-	- All figures are automatically saved in the images/ folder
-	- The notebook is fully reproducible
-	- Designed for both academic submission and portfolio showcase
+ - All figures are automatically saved in the images/ folder
+ - The notebook is fully reproducible
+ - Designed for both academic submission and portfolio showcase
 
 ## Conclusion
 
 This project demonstrates that a simplified DRAW-style recurrent generative model can effectively:
-
-	- Learn structured latent representations
-	- Reconstruct input images
-	- Generate new realistic samples even under constrained computational resources.
+ - Learn structured latent representations
+ - Reconstruct input images
+ - Generate new realistic samples even under constrained computational resources.
 
 ## Acknowledgment
 
