@@ -155,20 +155,22 @@ Generated samples appear sharper and more coherent compared to earlier configura
 ## Project Structure
 
 draw-fashion-mnist-generative-model/
-│
-├── notebook.ipynb
 ├── README.md
+├── notebook.ipynb
+├── requirements.txt
 ├── LICENSE
 ├── .gitignore
-├── requirements.txt
-│
 ├── images/
 │   ├── fashion_mnist_samples.png
 │   ├── reconstructions.png
 │   ├── generated_samples.png
 │   ├── best_model_reconstructions.png
 │   ├── best_model_generated_samples.png
-│   ├── loss_components.png
+│   └── loss_components.png
+└── docs/
+    ├── report.tex
+    ├── report.pdf
+    └── references.bib
 
 ---
 
