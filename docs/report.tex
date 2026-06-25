@@ -168,7 +168,7 @@ The results confirm the expected trade-off introduced by $\beta$-regularization.
 Figure~\ref{fig:loss} shows the evolution of total loss, reconstruction loss, and KL divergence during training.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.82\linewidth]{../images/loss_components.png}
+\includegraphics[width=0.82\linewidth]{images/loss_components.png}
 \caption{Training dynamics of the baseline recurrent VAE. Reconstruction loss decreases steadily, while the KL divergence increases initially and then stabilizes, indicating progressive latent-space regularization during training.}
 \label{fig:loss}
 \end{figure}
@@ -178,7 +178,7 @@ The training curves indicate stable optimization. The reconstruction loss decrea
 Figure~\ref{fig:data} shows representative Fashion-MNIST samples. Despite its simplicity, the dataset contains sufficient structural variation across clothing categories to serve as a useful testbed for generative modeling.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.72\linewidth]{../images/fashion_mnist_samples.png}
+\includegraphics[width=0.72\linewidth]{images/fashion_mnist_samples.png}
 \caption{Representative Fashion-MNIST samples used in the experiments.}
 \label{fig:data}
 \end{figure}
@@ -186,7 +186,7 @@ Figure~\ref{fig:data} shows representative Fashion-MNIST samples. Despite its si
 Figure~\ref{fig:recon} presents reconstructions produced by the model. The reconstructions preserve the global shape and coarse visual structure of the original images, although fine details are smoothed.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.72\linewidth]{../images/reconstructions.png}
+\includegraphics[width=0.72\linewidth]{images/reconstructions.png}
 \caption{Reconstruction examples produced by the simplified recurrent VAE. The model captures the overall structure of the input while smoothing fine-grained details.}
 \label{fig:recon}
 \end{figure}
@@ -194,7 +194,7 @@ Figure~\ref{fig:recon} presents reconstructions produced by the model. The recon
 Figure~\ref{fig:gen} shows random samples drawn from the latent space. The outputs exhibit recognizable clothing-like shapes, indicating that the model has learned a meaningful latent manifold rather than merely memorizing training examples.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.72\linewidth]{../images/generated_samples.png}
+\includegraphics[width=0.72\linewidth]{images/generated_samples.png}
 \caption{Samples generated from the learned latent space. The outputs are semantically coherent and demonstrate that the model captures the structure of Fashion-MNIST categories.}
 \label{fig:gen}
 \end{figure}
@@ -202,13 +202,13 @@ Figure~\ref{fig:gen} shows random samples drawn from the latent space. The outpu
 Figures~\ref{fig:bestrecon} and~\ref{fig:bestgen} show reconstructions and generated samples under the best-performing configuration identified in the experiments.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.72\linewidth]{../images/best_model_reconstructions.png}
+\includegraphics[width=0.72\linewidth]{images/best_model_reconstructions.png}
 \caption{Reconstructions obtained under the best-performing configuration. Improved clarity reflects a more favorable balance between latent capacity and regularization.}
 \label{fig:bestrecon}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.72\linewidth]{../images/best_model_generated_samples.png}
+\includegraphics[width=0.72\linewidth]{images/best_model_generated_samples.png}
 \caption{Generated samples obtained under the best-performing configuration. The outputs are more coherent and visually consistent than earlier configurations.}
 \label{fig:bestgen}
 \end{figure}
